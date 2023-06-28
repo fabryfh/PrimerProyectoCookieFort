@@ -1,14 +1,16 @@
 import './App.css'
+import Author from './Components/Author'
 import FortuneCookie from './Components/FirstProyectCook'
 import phrases from './data/phrases.json'
 import { useState } from 'react'
 
 
+
 function App() {
 
 
-    const [ index, setPhrase ] = useState(0)
-
+    const [ index, setPhrase, setAuthor ] = useState(0)
+    // const [ index, setAuthor ] = useState(0)
     
   const colors = ["#FDB137", "#785964", "#6D6875", "#B5838D", "#E5989B", "#7E9680", "#C73866", "#FFB4A2", "#79616F", "#EAB595" ]
 
@@ -17,13 +19,13 @@ function App() {
 
 
     const changePhrase = () => {
-      // setPhrase(index + 1)
 
       if (index < phrases.length){
         setPhrase(Math.floor(Math.random()*8))
       }else{
         setPhrase(0)
       }
+      
     }
 
   
@@ -33,8 +35,6 @@ function App() {
      color: ${colors[index]}`
   
 
-    // ${fondos[0]}
-
     
   return (
     <>
@@ -42,9 +42,12 @@ function App() {
       <FortuneCookie
       data={phrases[index]}/>
 
-              <div className="buttonContainer">
-               <button className='shuffleButton' onClick={changePhrase}>Ver más</button>
-               </div>
+            <div className="buttonContainer">
+          <button className='shuffleButton' onClick={changePhrase}>Ver más</button>
+        </div>
+
+        <Author
+      data={phrases[index]}/>
 
     </>
   )

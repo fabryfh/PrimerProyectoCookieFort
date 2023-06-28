@@ -1,81 +1,67 @@
 body {
-    /* padding: .1rem; */
-    /* background-color: hsl(193, 52%, 61%); */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
-root {
-    --big-font: 2.5rem;
-    --medium-font: 2rem;
-    --normal-font: 1.25rem;
-    --small-font: 1rem;
-    --tiny-font: .8rem;
-  }
 
 .title{
     /* border: 2px solid; */
     color: hsl(0, 0%, 100%);
     text-shadow: 10px 5px 5px hsla(0, 0%, 7%, 0.79); 
-    width: 850px;
+    width: 300px;
     height: 70px;
-    /* padding-top: 1px; */
-    /* line-height: 2; */
-    font-size: x-large;
+    font-size: xx-large;
     margin: 0 auto;
+    line-height: 1.5;
+    padding-top: 20px;
     font-family: 'Caprasimo', cursive;
 }
 
 .firstContainer{
-    /* border: 2px solid; */
-    width: 1000px;
-    height: 630px;
-    margin: 0 auto;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 539px;
     text-align: center;
+    
    
 }
 
 .imgFraseContainer{
-    /* border: 1px solid black; */
-    width: 800px;
-    height: 440px;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    padding-top: 70px;
-    padding-left: 10px;
-    line-height: 30px;
-    rotate: x;
-}
-
-.paperRoll{
-    /* border: 2px solid; */
-    height: 490px;
+     /* border: 2px solid black; */
+    background: url(/public/fondo/fondoText1.png) no-repeat center center;
+    background-size: 880px 450px;
     width: 900px;
+    height: 470px;
+    display: flex;
+    align-items: center;
     position: relative;
-    left: -8%;
-    top: -70px;    
-    color: white;
+    justify-content: center;
 }
-
 
 .textHere{
-    /* border: 2px solid; */
-    position: absolute;
-    top: 40%;
-    left: 58%;
-    height: 50%;
-    width: 75%;
-    transform: translate(-50%, -50%);
-    font-size: x-large;
+    position: relative;
+    left: 80px;
+    width: 500px;
     line-height: 3;
     text-shadow: 10px 5px 5px hsla(0, 0%, 65%, 0.51); 
+    font-size: x-large;
     font-family: 'Caprasimo', cursive;
 }
 
-.author{
-    /* border: 2px solid; */
-    position: absolute;
-    left: 35%;
+.authorContainer{
+    border: 5px solid ;
+    border-color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    height: 60px;
+    width: 300px;
+    font-size: x-large;
+    font-family: 'Caprasimo', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .buttonContainer{
@@ -84,21 +70,58 @@ root {
    height: 60px;
     padding: 2px;
     margin: 0 auto;
+    margin-bottom: 20px;
+    z-index: 10;
 }
 
 .shuffleButton{
     border: 5px solid ;
     border-color: hsl(0, 0%, 0%);
     background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 100%, 50%);
     border-radius: 15px;
     height: 60px;
     width: 200px;
     font-size: x-large;
     font-family: 'Caprasimo', cursive;
     transition: 0.5s;
+    z-index: 10;
 }
 
 .shuffleButton:hover{
     background-color: hsla(0, 0%, 100%, 0.281);
-    color: hsl(0, 93%, 44%);
+    color: hsl(0, 0%, 0%);
+}
+
+@media screen and (max-width:1000px) {
+    .imgFraseContainer{
+        width: 600px;
+        background-size: 580px 450px;
+    }
+    .textHere{
+        width: 390px;
+        left: 47px;
+        line-height: 2;
+    }
+    .title{
+        font-size: xx-large;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .imgFraseContainer{
+        width: 400px;
+        background-size: 380px 450px;
+    }
+    .textHere{
+        width: 200px;
+        left: 20px;
+        font-size: large;
+        line-height: 2.8;
+    }
+    .title{
+        font-size: xx-large;
+        width: 300px;
+    }
 }

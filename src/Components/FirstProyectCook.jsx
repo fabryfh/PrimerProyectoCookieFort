@@ -2,23 +2,24 @@ const FortuneCookie = ({data}) => {
     return(
         <article className="firstContainer">
 
-            <div className="title"> 
-            <h1>GALLETAS DE LA FORTUNA</h1>
-            </div>
+            
+            <h1 className="title">GALLETAS DE LA FORTUNA</h1>
+        
 
             <div className="imgFraseContainer">
-            <img src="/fondo/fondoText1.png" alt="" className="paperRoll"/>
-               <p className="textHere">{data.phrase}
 
-               <p className="author">{data.author}</p>
+               <p className="textHere">
+                {data.phrase}
+                
                </p>
               
             </div>
             
-         
+
         </article>
     )
 }
 
 export default FortuneCookie
 
+{/* <img src="/fondo/fondoText1.png" alt="" className="paperRoll"/> */}
