@@ -1,0 +1,104 @@
+body {
+    padding: .3rem;
+    /* background-color: hsl(193, 52%, 61%); */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+root {
+    --big-font: 2.5rem;
+    --medium-font: 2rem;
+    --normal-font: 1.25rem;
+    --small-font: 1rem;
+    --tiny-font: .8rem;
+  }
+
+.title{
+    color: hsl(0, 0%, 100%);
+    text-shadow: 10px 5px 5px hsla(0, 0%, 7%, 0.79); 
+    width: 850px;
+    height: 70px;
+    /* padding-top: 1px; */
+    /* line-height: 2; */
+    font-size: x-large;
+    border: 2px solid;
+    margin: 0 auto;
+    font-family: 'Caprasimo', cursive;
+}
+
+.firstContainer{
+    border: 2px solid;
+    width: 1000px;
+    height: 650px;
+    margin: 0 auto;
+    text-align: center;
+   
+}
+
+.imgFraseContainer{
+    width: 800px;
+    height: 450px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding-top: 70px;
+    padding-left: 10px;
+    line-height: 30px;
+    border: 1px solid black;
+    rotate: x;
+}
+
+.paperRoll{
+    border: 2px solid;
+    height: 490px;
+    width: 900px;
+    position: relative;
+    left: -8%;
+    top: -70px;    
+    color: white;
+}
+
+
+.textHere{
+    position: absolute;
+    top: 40%;
+    left: 58%;
+    height: 50%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+    font-size: x-large;
+    line-height: 3;
+    border: 2px solid;
+    text-shadow: 10px 5px 5px hsla(0, 0%, 65%, 0.51); 
+    font-family: 'Caprasimo', cursive;
+}
+
+.author{
+    position: absolute;
+    border: 2px solid;
+    left: 35%;
+}
+
+.buttonContainer{
+   width: 300px;
+   height: 60px;
+    padding: 2px;
+    border: 3px solid;
+    margin: 0 auto;
+}
+
+.shuffleButton{
+    border: 5px solid ;
+    border-color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    height: 60px;
+    width: 200px;
+    font-size: x-large;
+    font-family: 'Caprasimo', cursive;
+    transition: 0.5s;
+}
+
+.shuffleButton:hover{
+    background-color: hsla(0, 0%, 100%, 0.281);
+    color: hsl(0, 93%, 44%);
+}
