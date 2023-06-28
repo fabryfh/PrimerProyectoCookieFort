@@ -42,8 +42,8 @@ function App() {
       <FortuneCookie
       data={phrases[index]}/>
 
-            <div className="buttonContainer">
-          <button className='shuffleButton' onClick={changePhrase}>Ver más</button>
+        <div className="buttonContainer">
+         <button className='shuffleButton' onClick={changePhrase}>Ver más</button>
         </div>
 
         <Author
